@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+        }
+        #form{
+      height: 600px;
+       width: 25%;
+       margin:auto;
+       display: grid;
+       grid-template-rows: repeat(8,40px);
+       gap: 30px;
+       margin-top: 50px;
+    }
+    #form>input{
+        border: 0.5px solid black;
+    }
+    
+    #a2{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        height: 38px;
+    }
+   .p3{
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: 12px;
+   }
+  #form>.gen{
+       display: flex;
+   }
+   #chck{
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #reg{
+       color: white;
+       background-color: black;
+       font-weight: 700;
+       font-family: sans-serif;
+       height: 40px;
+   }
+   #reg:hover{
+       background-color: rgb(36, 34, 34);
+   }
+   #up{
+    height: 100px;
+    width: 30%;
+    /* border: 1px solid black; */
+    margin: auto;
+   }
+   .img{
+    height: 30px;
+    margin-right: 20px;
+   }
+   #req{
+    text-align: center;
+    margin-right: 350px;
+   }
+   .para2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+   }
+    </style>
+</head>
+<body>
+   <div id="create">
+    <h2>Create Account</h2>
+    <div id="up">
+        <span style="display: flex"><img class="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAe1BMVEX///8AAAAzMzPHx8eLi4sXFxfn5+dzc3P39/cHBwfX19cnJycLCwvz8/Ofn59fX18sLCxXV1fh4eGcnJwRERFra2vt7e1KSkqWlpa/v7/Q0NDj4+O0tLQ6Ojqqqqp9fX0gICBCQkIcHByQkJBHR0dTU1OCgoJmZmawsLC/ti85AAAGzElEQVR4nO2ca1uDOgzHlV0YbkN2EXU6x6a7fP9PeE4TNim00LKmPccnv3c+mNKU0aT/lD48MAzDMAzDMAzDMAzDMAzDMAzD0PGZ6vgM3TUbJttHPfvQvbPgq8WPx8c0dPfMWbU6sg3dPXPyUasnm9D9M2cZP6s5CEdeQnfPAW/Ckdk8dDfuZz4TnqxCd8MBZ+FIFLoXDtjA6z4I3Q0HQKx8Dt0LB6Twuuehu3E/k7Xw5Dt0NxwQC0emoXvhgCd43d9Dd8MBe+HIInQvHNCeGzsneZ4QOTJpTyndsyNy5KFt2UXBD5EfmG95hOqJfHv2IxkTOVKI1v3MWpm4FVU+hJPWE1HrEp9wK6oFKbzqr0SNy/yIW1GpNgMYJS+BHZcMVELaUTTuZ2X1LG5FldUtYZS8SFvjRNzqrXlhM3DAQjQ+6mtt9d7uxK3WjfxknJFP+AZk5jEBFz7NYPgS2gfEXBMD5UkRDF9Du4CYz9tT8e+KYJiGdgExlsT0wfBtG90NpIvr/vZbxRykYS9uRRUM32GUOBjaAMEwI2ocZYcvotYlMBhSacwwgxdEjctAMBwRLdZzeNWHNI3L6IKhG06icT+1EV0wdMIEqlUxTeM1IBieiRrHiLokal3iAreiWoRGovEjUeMyEAypRCAMhl4qPF3BMB/fA4xSZGPRe/JctAbDfH9/xmdH0nOm/mgPhrFvPx77CjnQU30w3AdwpFc2M4dgeNJeP/n3I+k1V4Mim7QUKeNi1B/o2MzOJuqXhIMiSxoM+w2wLbTBEBQYP7o1qSKL62cvwZBWkQUx2c9+s/ZgeCe4MrwQtS6xhGBIpcjC+rkgalwGguGBaGWI62cvmzawPKkPhveBYrKXlSEEQ6odO1hW97MyhGBItWUS9s4mH0StS9CWJ6f/sWA4X8ySXmD+10XkIFyaBUPq+ogDNc1MkY2IHbn/p21YnjwT+9Es9tliGAxz2pJVcXeeNzdXZCf2wCit8+5/vNeNh4ehuBVZMCQVk2VIvx8gFZNlMBhSLUJ1lVUCSBVZXD97+e6FVpHdi8b9fBxGWp6kraxKYDCkKk/C+tnP5nHS8mSHmOwS2vIkBkOqbdASGAyJFqFzf8HQqjw52WVTK1DvLRRXstjxY7IqT+4cZYePFoNnilUwdLoecSsF2gXDhUtH3KYSsMAwVmSXDvc0Tp3mdtZ7dZZPFsAoTdXXHKeosHYt3LZ5A1MGj8GQSpHtqKy6BIqbVIosrZgsQavIQsrQVll1B215krSyKkNanvT4rQvtyhBGaR37ILMKhpZ437RNVZ4sPPtREPmx8ewHWTB0ml4akBHFXczhjkNfpFT5A1TV/WQnpODeAy/7rWk5/5EHgmKWl3SRFpD8/GxzIGX8Vx4ILKj+wPEtuOz0U2ojZfenHoifjUCkwAPxU/skBfX3P3DCHAgzfnZmkYIPRCc5PK3ixXERp/Z6x9XS2wihBqTs6Hw4vS0fopVNIiZZkmXsEqiUKXcHvK2llVBhXujtb9kfPIAmmZXsb48m/2ks6s63oR1Eszqtlr9TyXtWNXp1N1ceare8Vu+VZyzsS0+UJztd1Z3xVHHxp7Scy8/K3b7+ZeOWeMf51Y/9Kb2ku0i+r1qowGv59Gb5dUnjq2VZJBrUbNauHGmMbVleO+Jf5+vvZVNuYMOErD6uQPksy398+ahZYm6d186EcrdTZCDLWRnupUGxbl3dH5fixlO8/ln/Rf5r+VSxHFUtV2CZqCwjlzL2ZP7L9R2Au61lGfgzqQ7hvIb09igtf5qW5PMyHmFcnzQh4nQoz7BnrbGJd1h5mF6BvdFN0R9e3PayA/xLMyrB1OE/ncs1Awh1h1Gb5Rgsm5UJeHMKV/0zBrbQKXYHTGDKaXs/L5XpS7KEt8R7YjrU/RD2qlenyklnuVW9OuSAFqFSHUFXbateg6ykktnB0vuJ7druwIW2Y2e0/3AO4gg8EZXKtejqjtYSMgUvZ6tUeVPPvuUs2vZL/1bPvuVWYu9HUb9rplmcXNtkI53lB1h6l2Rxmm3WKk+aablimajntZNmWqZG/cVp3vHtvEC9I3m81s2DxGA9v66hQic75Ba1JWTyQZQziHy1eRQ/1+pKmLYKS/ysKIiUucHFx8tvnj3G9dGoSyHWWh7CVF/KQ3EP3/h7WO7KlV23HjK8WuayZahzwW9fmWWvi9fbKtKkyP9reaxYmh9D5xrVF4xmvelvSUNaPzt6ZPrrWNUtD2HPm/94rnYmic3f1uWiryURy91V3toO7QpaN8vE1pKKfHD5umz6DCla/v/3IDAMwzAMwzAMwzAMwzAMwzAM83/hH2URa/sPYjRUAAAAAElFTkSuQmCC" alt=""><p class="para2">Check out faster.</p></span>
+        <span style="display: flex"> <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfrorgYQmQaTp4SUPZUr5SadIp1-dn2c95Q&usqp=CAU" alt=""> <p class="para2">Track orders easily</p></span>   
+        <span style="display: flex"><img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_w-gxtugHq-iv5VF4G5VzdgkRa07rq98B5A&usqp=CAU" alt=""><p class="para2">Use one sign-in across our brands</p></span>
+    </div>
+    <br><br>    
+    <p id="req">*Required</p>
+    <form action="Signup.html" id="form">
+        
+        <input  type="email"  id="email" value="" placeholder="Email">
+        <input placeholder="First Name" type="text" id="fname">
+        <input placeholder="Last Name" type="text" id="lname">
+        <input type="text" id="pass" placeholder="Create Password">
+       
+       
+       <p id="chck"><input type="checkbox" name="" id="">Keep me signed in. Details </p>
+       <p id="a2">By creating an account, you agree to our <a href="https://www.nordstrom.com/browse/customer-service/policy/privacy">Privacy Policy </a>and Terms & Conditions.</p>
+       <input id="reg" type="submit"  value="Create Account" />
+     </form>
+</div>
+</body>
+</html>
+
+<script>
+    var form = document.querySelector("#form")
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+        if( form.email.value=="" ||form.fname.value=="" || form.lname.value=="" || form.pass.value=="")
+     {
+         alert("Enter the details first")
+     }
+     else{
+         var data={
+            mail:form.email.value,
+            fnam:form.fname.value,
+            lnam:form.lname.value,
+            pas:form.pass.value,
+         }
+         localStorage.setItem("userdata",JSON.stringify(data))  
+         window.location.href="home.html" 
+
+
+     }
+    })
+   </script>
+   
+
